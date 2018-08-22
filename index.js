@@ -11,8 +11,6 @@ music.on('message', async message => {
     let args = message.content.slice(prefix.length).trim().split(" ");
     let cmd = args.shift().toLowerCase();
     let sender = message.author;
-    var youtube = new YouTube(process.env.YT_API);
-
     
     if (!msg.startsWith(prefix)) return;
     if (sender.bot) return;
