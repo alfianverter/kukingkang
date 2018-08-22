@@ -1,6 +1,6 @@
 const cfg = require("../config.json");
 const Discord = require('discord.js');
-const key = process.env.YTAPI;
+const key = process.env.YT_API;
 const fs = require("fs");
 const moment = require("moment");
 const yt = require("ytdl-core");
