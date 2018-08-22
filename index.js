@@ -27,7 +27,7 @@ music.on('message', async message => {
     }
 });
 
-music.login(process.env.BOT_TOKEN);
+music.login(process.env.TOKEN);
 
 music.on('ready', async () => {
     console.log(`${music.user.username} is online!`);
