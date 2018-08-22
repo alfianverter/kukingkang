@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const music = new Discord.Client({disableEveryone: true});
 music.commands = new Discord.Collection();
 const {color} = require('./config.json');
-const {color} = require('process.env.TOKEN');
+const {token} = require('process.env.TOKEN');
 const queue = new Map();
 
 music.on('message', async message => {
