@@ -1,8 +1,7 @@
 const Discord = require("discord.js");
 const music = new Discord.Client({disableEveryone: true});
 music.commands = new Discord.Collection();
-const {color} = require('./config.json');
-const {token} = require('process.env.TOKEN');
+const {color, token} = require('./config.json');
 const queue = new Map();
 
 music.on('message', async message => {
@@ -27,7 +26,7 @@ music.on('message', async message => {
     }
 });
 
-music.login(process.env.TOKEN);
+music.login(process.env.BOT_TOKEN);
 
 music.on('ready', async () => {
     console.log(`${music.user.username} is online!`);
